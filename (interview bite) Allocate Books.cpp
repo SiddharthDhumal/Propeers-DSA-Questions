@@ -21,7 +21,7 @@ bool maxPagesCanbeAllocated(vector<int>& A,int B,int mid){
 } 
 
 
-int Solution::books(vector<int> &A, int B) {
+int books(vector<int> &A, int B) {
     
     if(B>A.size())
        return -1;
