@@ -1,6 +1,8 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+// TC - O(m+n) where m and n are the sizes of the two lists
+// SC - O(1) auxiliary (excluding the output array)
 class Solution {
 public:
     vector<vector<int>> intervalIntersection(vector<vector<int>>& firstList,
