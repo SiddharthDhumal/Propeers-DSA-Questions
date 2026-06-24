@@ -1,6 +1,7 @@
+// TC - O(n) SC - O(k)
+
 #include "bits/stdc++.h"
 using namespace std;
-
 
 class Solution {
 public:
