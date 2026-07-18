@@ -1,6 +1,17 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+
+// Final Complexity
+
+// Let
+
+// M = modulus (100000)
+// N = arr.size()
+// Complexity	Value
+// Time	O(M × N)
+// Space	O(M)
+
 class Solution {
   public:
     int minSteps(vector<int>& arr, int start, int end) {
