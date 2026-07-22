@@ -1,6 +1,61 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+
+
+// Time Complexity
+
+// Let's derive it simply.
+
+// Outer BFS states
+
+// Player can be at any cell.
+
+// Box can be at any cell.
+
+// Maximum states
+
+// (m × n) × (m × n)
+
+// =
+
+// O((mn)²)
+// Inner BFS
+
+// Every outer state may run one BFS for the player.
+
+// Player BFS visits at most
+
+// m × n
+
+// cells.
+
+// So
+
+// O(mn)
+// Total
+// Outer States × Inner BFS
+
+// =
+
+// O((mn)² × mn)
+
+// =
+
+// O((mn)³)
+
+// Since m, n ≤ 20, there are at most 400 cells, making this approach practical for the problem constraints.
+
+// Interview Summary
+
+// The entire solution boils down to these three ideas:
+
+// Outer BFS explores states by number of pushes because every push costs exactly 1.
+// Inner BFS checks whether the player can walk to the correct side of the box before a push, treating the box as an obstacle.
+// State = (box position, player position) because both positions determine what pushes are possible next.
+
+
+
 class Solution {
 public:
     int m, n;
