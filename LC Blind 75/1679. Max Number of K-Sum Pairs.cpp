@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
+// Tc - O(n) and SC - O(n)
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
